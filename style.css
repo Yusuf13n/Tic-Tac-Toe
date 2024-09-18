@@ -30,13 +30,6 @@ section {
 	outline-offset: -2px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 80px;
-}
-
 .cell {
   display: flex;
   justify-content: center;
@@ -51,6 +44,12 @@ section {
   background-color: rgba(205, 169, 133, 0.286);
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+}
 
 .scoreContainer {
   width: 150px;
@@ -108,10 +107,6 @@ section {
 
 
 
-
-
-
-
 .btn-reset {
   width: 130px;
   height: 60px;
@@ -153,6 +148,22 @@ section {
 }
 
 
-
-
-
+@media (max-width: 450px) {  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 70px 10px 0px 10px;
+  }
+  .scoreContainer {
+    width: 180px;
+  }
+  .btn-reset {
+    width: 100px;
+    font-size: 12px;
+  }
+  .btnComputer {
+    width: 100px;
+    font-size: 12px;
+  }
+}
