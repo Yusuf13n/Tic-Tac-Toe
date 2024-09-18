@@ -152,8 +152,8 @@ btnPlayAgainstComputer.addEventListener('click', () => {
   } else {
     btnPlayAgainstComputer.textContent = 'vs Comp';
   }
-  resetGame();
 });
+
 
 
 
@@ -161,7 +161,8 @@ btnPlayAgainstComputer.addEventListener('click', () => {
 
 const scoreContainer = document.createElement('div');
 scoreContainer.classList = 'scoreContainer';
-scoreContainer.innerHTML = `
+scoreContainer.innerHTML = 
+`
 <div>
 <span>Игрок:</span> <span id="player-score">0</span>
 </div>
@@ -169,6 +170,7 @@ scoreContainer.innerHTML = `
 <span>Компьютер:</span> <span id="computer-score">0</span>
 </div>
 `;
+
 container.append(scoreContainer, btnPlayAgainstComputer);
 
 
